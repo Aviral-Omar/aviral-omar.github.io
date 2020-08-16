@@ -1,5 +1,9 @@
 <template>
-  <Header @toggle-drawer="toggleDrawer" />
+  <Header
+    :active-section="section"
+    @toggle-drawer="toggleDrawer"
+    @change-section="changeSection"
+  />
   <main>
     <transition name="slide">
       <navigation-drawer
@@ -39,7 +43,7 @@ export default {
   },
   data () {
     return {
-      isDrawerOpen: !(window.innerWidth < 768),
+      isDrawerOpen: false,
       activeSection: About,
       section: 'about'
     }
@@ -49,9 +53,7 @@ export default {
       this.isDrawerOpen = !this.isDrawerOpen
     },
     closeDrawer () {
-      if (window.innerWidth < 768) {
-        this.isDrawerOpen = false
-      }
+      this.isDrawerOpen = false
     },
     changeSection (section) {
       if (section === 'about') {
@@ -62,7 +64,7 @@ export default {
         this.activeSection = Connect
       }
       this.section = section
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 700) {
         this.toggleDrawer()
       }
     }
@@ -84,45 +86,45 @@ html {
     margin: 0;
 
     #app {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5rem;
-    }
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.5rem;
 
-    main {
-      display: flex;
-      overflow: hidden;
-    }
+      main {
+        display: flex;
+        overflow: hidden;
 
-    .section {
-      overflow-y: scroll;
-      flex-grow: 1;
-      text-align: center;
-      height: calc(100vh - 3rem);
-    }
+        .section {
+          overflow-y: scroll;
+          flex-grow: 1;
+          text-align: center;
+          height: calc(100vh - 3rem);
+        }
 
-    .slide-enter-active,
-    .slide-leave-active {
-      transition: all 0.1s ease-out;
-    }
+        .slide-enter-active,
+        .slide-leave-active {
+          transition: all 0.3s ease-out;
+        }
 
-    .slide-enter-from,
-    .slide-leave-to {
-      transform: translateX(-20rem);
-    }
+        .slide-enter-from,
+        .slide-leave-to {
+          transform: translateX(-20rem);
+        }
 
-    .slide-fade-enter-active,
-    .slide-fade-leave-active {
-      transition: all 0.1s ease-out;
-    }
+        .slide-fade-enter-active,
+        .slide-fade-leave-active {
+          transition: all 0.3s ease-out;
+        }
 
-    .slide-fade-enter-from {
-      transform: translateY(100vh);
-      opacity: 0;
-    }
+        .slide-fade-enter-from {
+          transform: translateY(100vh);
+          opacity: 0;
+        }
 
-    .slide-fade-leave-to {
-      transform: translateY(-100vh);
-      opacity: 0;
+        .slide-fade-leave-to {
+          transform: translateY(-100vh);
+          opacity: 0;
+        }
+      }
     }
   }
 }
