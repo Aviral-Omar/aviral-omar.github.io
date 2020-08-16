@@ -112,6 +112,7 @@ export default {
     }
 
     @media(min-width: 700px) {
+      background: linear-gradient(to left, #00afff, #00ffff);
       justify-content: flex-end;
     }
   }
