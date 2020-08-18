@@ -1,9 +1,5 @@
 <template>
-  <Header
-    :active-section="section"
-    @toggle-drawer="toggleDrawer"
-    @change-section="changeSection"
-  />
+  <Header :active-section="section" @toggle-drawer="toggleDrawer" @change-section="changeSection" />
   <main>
     <transition name="slide">
       <navigation-drawer
@@ -12,15 +8,8 @@
         @change-section="changeSection"
       />
     </transition>
-    <transition
-      name="slide-fade"
-      mode="out-in"
-    >
-      <component
-        :is="activeSection"
-        class="section"
-        @click="closeDrawer"
-      />
+    <transition name="slide-fade" mode="out-in">
+      <component :is="activeSection" class="section" @click="closeDrawer" />
     </transition>
   </main>
 </template>
@@ -68,64 +57,63 @@ export default {
         this.toggleDrawer()
       }
     }
-
   }
 }
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
-* {
-  box-sizing: border-box;
-}
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
+  * {
+    box-sizing: border-box;
+  }
 
-html {
-  line-height: 1.15;
+  html {
+    line-height: 1.15;
 
-  body {
-    margin: 0;
+    body {
+      margin: 0;
 
-    #app {
-      font-family: 'Quicksand', sans-serif;
-      font-size: 1.5rem;
+      #app {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.5rem;
 
-      main {
-        display: flex;
-        overflow: hidden;
+        main {
+          display: flex;
+          overflow: hidden;
 
-        .section {
-          overflow-y: scroll;
-          flex-grow: 1;
-          text-align: center;
-          height: calc(100vh - 3rem);
-        }
+          .section {
+            overflow-y: scroll;
+            flex-grow: 1;
+            text-align: center;
+            height: calc(100vh - 3rem);
+          }
 
-        .slide-enter-active,
-        .slide-leave-active {
-          transition: all 0.3s ease-out;
-        }
+          .slide-enter-active,
+          .slide-leave-active {
+            transition: all 0.3s ease-out;
+          }
 
-        .slide-enter-from,
-        .slide-leave-to {
-          transform: translateX(-20rem);
-        }
+          .slide-enter-from,
+          .slide-leave-to {
+            transform: translateX(-20rem);
+          }
 
-        .slide-fade-enter-active,
-        .slide-fade-leave-active {
-          transition: all 0.3s ease-out;
-        }
+          .slide-fade-enter-active,
+          .slide-fade-leave-active {
+            transition: all 0.3s ease-out;
+          }
 
-        .slide-fade-enter-from {
-          transform: translateY(100vh);
-          opacity: 0;
-        }
+          .slide-fade-enter-from {
+            transform: translateY(100vh);
+            opacity: 0;
+          }
 
-        .slide-fade-leave-to {
-          transform: translateY(-100vh);
-          opacity: 0;
+          .slide-fade-leave-to {
+            transform: translateY(-100vh);
+            opacity: 0;
+          }
         }
       }
     }
   }
-}
 </style>

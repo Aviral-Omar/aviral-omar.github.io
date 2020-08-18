@@ -1,31 +1,25 @@
 <template>
   <header class="main-header">
-    <div
-      id="hamburger-icon"
-      @click="$emit('toggle-drawer')"
-    >
-      <img
-        src="../../assets/hamburger-icon.png"
-        alt="Could not load asset!"
-      >
+    <div id="hamburger-icon" @click="$emit('toggle-drawer')">
+      <img src="../../assets/hamburger-icon.png" alt="Could not load asset!" />
     </div>
     <nav id="main-navigation">
       <ul>
         <li>
           <a
-            :class="{ active: active === 'about'}"
+            :class="{ active: active === 'about' }"
             @click="$emit('change-section', 'about')"
           >About Me</a>
         </li>
         <li>
           <a
-            :class="{ active: active === 'projects'}"
+            :class="{ active: active === 'projects' }"
             @click="$emit('change-section', 'projects')"
           >Projects</a>
         </li>
         <li>
           <a
-            :class="{ active: active === 'connect'}"
+            :class="{ active: active === 'connect' }"
             @click="$emit('change-section', 'connect')"
           >Connect</a>
         </li>
@@ -59,7 +53,7 @@ export default {
     padding: 0.5rem;
     height: 3rem;
     width: 100%;
-    background: linear-gradient(to right, #00afff, #00ffff);
+    background: linear-gradient(to right, #00afff, #00ffff 50%, #00afff);
     box-shadow: 2px 0 2px 2px rgba($color: #000000, $alpha: 0.2);
 
     #hamburger-icon {
@@ -71,7 +65,7 @@ export default {
         width: 100%;
       }
 
-      @media(min-width: 700px) {
+      @media (min-width: 700px) {
         display: none;
       }
     }
@@ -106,13 +100,12 @@ export default {
         }
       }
 
-      @media(max-width: 700px) {
+      @media (max-width: 700px) {
         display: none;
       }
     }
 
-    @media(min-width: 700px) {
-      background: linear-gradient(to left, #00afff, #00ffff);
+    @media (min-width: 700px) {
       justify-content: flex-end;
     }
   }
