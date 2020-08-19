@@ -75,7 +75,7 @@ export default {
 
       #app {
         font-family: "Quicksand", sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
         main {
           display: flex;

@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss" scoped>
   #navigation-drawer {
+    font-size: 1.5rem;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;

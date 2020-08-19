@@ -47,6 +47,7 @@ export default {
 
 <style lang="scss" scoped>
   .main-header {
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

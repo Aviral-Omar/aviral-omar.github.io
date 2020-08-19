@@ -49,7 +49,7 @@ export default {
 
 <style lang="scss" scoped>
   #connect-section {
-    padding: 0 auto;
+    padding: 0 auto 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +65,8 @@ export default {
         align-items: center;
 
         h3 {
-          margin: 1rem;
+          font-size: 1.3rem;
+          margin: 1rem 0 1rem 1rem;
         }
 
         img {
