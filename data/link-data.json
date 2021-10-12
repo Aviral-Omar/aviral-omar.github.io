@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Institute Links",
+    "links": [
+      {
+        "name": "AUGSD",
+        "url": "https://academic.bits-pilani.ac.in/Student_Login.aspx"
+      },
+      {
+        "name": "Nalanda",
+        "url": "https://nalanda-aws.bits-pilani.ac.in/my/"
+      },
+      {
+        "name": "ERP",
+        "url": "https://sis.erp.bits-pilani.ac.in/psc/sisprd/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL"
+      },
+      {
+        "name": "Notice Board",
+        "url": "https://onboard.bits-pilani.ac.in/ucp.php?mode=login&login=external&oauth_service=google"
+      },
+      {
+        "name": "SWD",
+        "url": "http://swd.bits-pilani.ac.in/Login.aspx"
+      },
+      {
+        "name": "Library",
+        "url": "http://library.bits-pilani.ac.in/login.php"
+      },
+      {
+        "name": "PSD",
+        "url": "http://psd.bits-pilani.ac.in/Login.aspx"
+      },
+      {
+        "name": "IPC",
+        "url": "https://www.bits-pilani.ac.in/pilani/ipc/Services"
+      }
+    ]
+  },
+  {
+    "title": "Unions, Clubs & Departments",
+    "links": [
+      {
+        "name": "SU",
+        "url": "https://su-bitspilani.org/index.html"
+      },
+      {
+        "name": "Sports Union",
+        "url": "https://bits-sports.org/landing.html"
+      },
+      {
+        "name": "SAC",
+        "url": "https://sacbitspilani.wordpress.com/"
+      },
+      {
+        "name": "EC",
+        "url": "https://bitselections.wordpress.com/"
+      },
+      {
+        "name": "EPC",
+        "url": "https://epcbits.com/"
+      },
+      {
+        "name": "HPC",
+        "url": "https://hindipressclub.wordpress.com/"
+      },
+      {
+        "name": "The BITS Review",
+        "url": "https://thebitsreview.org/"
+      }
+    ]
+  },
+  {
+    "title": "Utility",
+    "links": [
+      {
+        "name": "WiFi Login",
+        "url": "https://fw.bits-pilani.ac.in:8090/httpclient.html"
+      },
+      {
+        "name": "Expository - PU",
+        "url": "https://expository.notion.site/expository/Project-Expository-Placement-Unit-23daf8baf50a4ba69f3aa1be566fb2b4"
+      },
+      {
+        "name": "Time Table Generator",
+        "url": "https://timetable.bits-dvm.org/pilani.html"
+      },
+      {
+        "name": "StudyDeck",
+        "url": "https://studydeck.bits-sutechteam.org/"
+      },
+      {
+        "name": "BITS Map",
+        "url": "https://map.epcbits.com/"
+      },
+      {
+        "name": "Handouts",
+        "url": "https://sacbitspilani.wordpress.com/resources/"
+      }
+    ]
+  },
+  {
+    "title": "Classes & Evaluation",
+    "links": [
+      {
+        "name": "Google Meet",
+        "url": "https://meet.google.com/"
+      },
+      {
+        "name": "Google Calendar",
+        "url": "https://calendar.google.com/"
+      },
+      {
+        "name": "Google Classroom",
+        "url": "https://classroom.google.com/"
+      },
+      {
+        "name": "Canvas",
+        "url": "https://canvas.instructure.com/login/google"
+      }
+    ]
+  }
+]
