@@ -77,12 +77,16 @@
     "title": "Utility",
     "links": [
       {
-        "name": "WiFi Login",
-        "url": "https://fw.bits-pilani.ac.in:8090/httpclient.html"
+        "name": "Superset - PU",
+        "url": "https://app.joinsuperset.com/#/s/profile"
       },
       {
         "name": "Expository - PU",
         "url": "https://expository.notion.site/expository/Project-Expository-Placement-Unit-23daf8baf50a4ba69f3aa1be566fb2b4"
+      },
+      {
+        "name": "WiFi Login",
+        "url": "https://fw.bits-pilani.ac.in:8090/httpclient.html"
       },
       {
         "name": "Time Table Generator",
