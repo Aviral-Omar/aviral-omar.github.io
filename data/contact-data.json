@@ -1,45 +1,5 @@
 [
   {
-    "title": "Student Union",
-    "contacts": [
-      {
-        "position": "President",
-        "name": "Harsh Shukla",
-        "number": "7390967807"
-      },
-      {
-        "position": "General Secretary",
-        "name": "Harsh Lamba",
-        "number": "7082769694"
-      },
-      {
-        "position": "2018 Batch Representative",
-        "name": "Aman Manish Garg",
-        "number": "9755459845"
-      },
-      {
-        "position": "2019 Batch Representative",
-        "name": "Pranav Shanmukh Yellayi",
-        "number": "8305191706"
-      },
-      {
-        "position": "2019 Batch Representative",
-        "name": "Aditi Sharma",
-        "number": "9602571441"
-      },
-      {
-        "position": "2020 Batch Representative",
-        "name": "Yash Anil Saboo",
-        "number": "9534065076"
-      },
-      {
-        "position": "2020 Batch Representative",
-        "name": "Naman Gupta",
-        "number": "8791629985"
-      }
-    ]
-  },
-  {
     "title": "Administration",
     "contacts": [
       {
@@ -401,6 +361,31 @@
         "position": "Superintendent",
         "name": "Mr. Samunder Singh",
         "number": "9694096473 / 9991196473"
+      }
+    ]
+  },
+  {
+    "title": "CVR Bhawan",
+    "contacts": [
+      {
+        "position": "Chowki",
+        "name": "Mr. Jai Singh Rathore",
+        "number": "9460673162"
+      },
+      {
+        "position": "Superintendent",
+        "name": "Mr. Ranveer Singh",
+        "number": "9588098829"
+      },
+      {
+        "position": "Non-Residential Warden",
+        "name": "Prof. Rajeev Taliyan",
+        "number": "8769196560"
+      },
+      {
+        "position": "Warden",
+        "name": "Prof. Kamlesh Tiwari",
+        "number": "9116499200"
       }
     ]
   }
